@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Portafolio - Hugo Sánchez Gallardo</title>
+    <link rel="stylesheet" href="assets/estilo/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                Hugo Sánchez Gallardo
+            </div>
+            <nav>
+                <a href="#about">Sobre mí</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#contact">Contacto</a>
+				<a href="#curriculum">Curriculum</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="intro" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy <span>Hugo Sánchez Gallardo</span></h1>
+            <p>Desarrollador Web: <span class="typewriter">Creativo, Innovador, Apasionado</span></p>
+            <a href="#contact" class="cta-btn">Contáctame</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/img/negro.jpg" alt="Hugo Sánchez">
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy un desarrollador web con una pasión por crear soluciones eficientes, innovadoras y escalables. Siempre estoy en busca de aprender nuevas tecnologías y mejorar mis habilidades.
+			Me encanta crear soluciones que resuelven problemas reales y mejorar la experiencia del usuario. 
+			Mi enfoque se basa en valores clave como 'la calidad', 'la colaboración', 'la eficiencia', y me esfuerzo constantemente por aprender y evolucionar en mi campo.</p>
+        </div>
+    </section>
+
+    <!-- Sección de habilidades -->
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Desarrollo de sitios web responsive y accesibles.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Programación dinámica y de alto rendimiento en la web.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>PHP</h3>
+                    <p>Desarrollo de aplicaciones interactivas y web dinámicas.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Sección de contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p align="center">Puedes contactarme a través de mis redes sociales</p>
+	<center>
+		<div class="social-links">
+			<!-- GitHub -->
+			<a href="https://github.com/hsgallardo" target="_blank">
+				<i class="fa-brands fa-github"></i>
+			</a>
+
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/hugoogallardo/" target="_blank">
+				<i class="fa-brands fa-instagram"></i>
+			</a>
+
+			<!-- Gmail -->
+			<a href="mailto:hugogallardo2004@gmail.com" target="_blank">
+				<i class="fa-solid fa-envelope"></i>
+			</a>
+
+            <a href="#" onclick="mostrarNumero(event)" aria-label="Mostrar número de teléfono">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <p id="numeroTelefono" style="display: none; margin-top: 10px;">+34 622 505 992</p>
+            
+            
+		</div>
+	</center>
+
+
+    </section>
+	<center id="curriculum" class="curriculum">
+		<a href="./assets/pdf/cv_hugo.pdf" download="cv_hugo.pdf" class="btn">Curriculum</a>
+	</center><br>
+
+    <center id="curriculum" class="curriculum">
+		<a href="./assets/proyectos.html"  class="btn">Proyectos</a>
+	</center><br>
+
+    <footer>
+        <p>&copy; 2024 Hugo Sánchez Gallardo - Todos los derechos reservados</p>
+        <script>
+            // Función para mostrar el número de teléfono
+            function mostrarNumero(event) {
+                event.preventDefault(); // Evita el comportamiento por defecto del enlace
+                const numero = document.getElementById("numeroTelefono");
+                numero.style.display = "block"; // Muestra el número de teléfono
+            }
+        
+        </script>
+        
+    
+</body>
+</html>
