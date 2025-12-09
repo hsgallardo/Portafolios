@@ -116,6 +116,8 @@ h2 {
 }
 
 .skill-card {
+    flex: 1 1 calc(33% - 2rem); /* Tres tarjetas por fila aprox */
+    min-width: 250px; /* Evita que sean demasiado pequeñas en móvil */
     background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -123,11 +125,14 @@ h2 {
     text-align: center;
 }
 
+
 .skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
+
 
 /* Sección de Experiencia */
 .experience-item {
@@ -220,24 +225,25 @@ a:hover {
     color: #0073e6;  /* Cambia el color del icono cuando el usuario pasa el cursor */
 }
 
-.curriculum{
-	.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	font-size: 16px;
-	text-decoration: none;
-	color: #fff; /* Letra blanca */
-	background-color: #333; /* Fondo oscuro */
-	border-radius: 5px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-	transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+.curriculum .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff; /* Letra blanca */
+    background-color: #333; /* Fondo oscuro */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
 }
-.btn:hover {
-	background-color: #555; /* Cambio de color al pasar el mouse */
-	transform: translateY(-2px); /* Efecto de levantamiento */
+
+.curriculum .btn:hover {
+    background-color: #555; /* Cambio de color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de levantamiento */
 }
-.btn:active {
-	background-color: #444; /* Color más oscuro cuando se hace clic */
-	transform: translateY(0); /* Restablecer el efecto de levantamiento */
+
+.curriculum .btn:active {
+    background-color: #444; /* Color más oscuro cuando se hace clic */
+    transform: translateY(0); /* Restablecer el efecto de levantamiento */
 }
-}
+
