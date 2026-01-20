@@ -115,6 +115,24 @@ h2 {
     text-align: center;
 }
 
+h3.skill-category {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: #6a92c2;
+    font-weight: 600;
+}
+
+.category-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .skill-card {
     flex: 1 1 calc(33% - 2rem); /* Tres tarjetas por fila aprox */
     min-width: 250px; /* Evita que sean demasiado pequeñas en móvil */
@@ -123,6 +141,18 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(106, 146, 194, 0.3);
+}
+
+.skill-card h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
 
