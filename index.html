@@ -21,6 +21,7 @@
                 <a href="#skills">Habilidades</a>
                 <a href="#contact">Contacto</a>
 				<a href="#curriculum">Curriculum</a>
+				<a href="#proyectos">Proyectos</a>
             </nav>
         </div>
     </header>
@@ -30,7 +31,9 @@
         <div class="hero-content">
             <h1>Hola, soy <span>Hugo Sánchez Gallardo</span></h1>
             <p>Desarrollador Web: <span class="typewriter">Creativo, Innovador, Apasionado</span></p>
-            <a href="#contact" class="cta-btn">Contáctame</a>
+            <div class="hero-actions">
+                <a href="#contact" class="cta-btn">Contáctame</a>
+            </div>
         </div>
         <div class="hero-image">
             <img src="assets/img/negro.jpg" alt="Hugo Sánchez">
@@ -52,117 +55,137 @@
         <div class="container">
             <h2>Habilidades Técnicas</h2>
             
-            <!-- Frontend -->
-            <h3 class="skill-category">Tecnologías Frontend</h3>
-            <p class="category-description">Desarrollo de interfaces de usuario modernas, interactivas y responsivas utilizando las últimas tecnologías web.</p>
-            <div class="skills">
-                <div class="skill-card">
-                    <h4>HTML5</h4>
-                    <p>Estructura semántica de páginas web modernas.</p>
+            <div class="skill-section">
+                <div class="skill-section__header">
+                    <span class="skill-section__pill">Frontend</span>
+                    <h3 class="skill-category">Tecnologías Frontend</h3>
+                    <p class="category-description">Desarrollo de interfaces de usuario modernas, interactivas y responsivas utilizando las últimas tecnologías web.</p>
                 </div>
-                <div class="skill-card">
-                    <h4>CSS3</h4>
-                    <p>Diseño y estilizado avanzado con animaciones y layouts responsive.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>JavaScript</h4>
-                    <p>Programación dinámica y de alto rendimiento en el navegador.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>TypeScript</h4>
-                    <p>JavaScript con tipado estático para mayor seguridad y escalabilidad.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Angular</h4>
-                    <p>Framework robusto para aplicaciones web de gran escala.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Bootstrap</h4>
-                    <p>Framework CSS para desarrollo rápido y responsive.</p>
-                </div>
-            </div>
-
-            <!-- Backend -->
-            <h3 class="skill-category">Tecnologías Backend</h3>
-            <p class="category-description">Desarrollo del lado del servidor, APIs RESTful, y lógica de negocio para aplicaciones web robustas y escalables.</p>
-            <div class="skills">
-                <div class="skill-card">
-                    <h4>PHP</h4>
-                    <p>Desarrollo de aplicaciones web dinámicas y sistemas backend.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Node.js</h4>
-                    <p>Entorno JavaScript del lado del servidor para APIs rápidas.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Java</h4>
-                    <p>Aplicaciones empresariales robustas y escalables.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Python</h4>
-                    <p>Desarrollo web, automatización y análisis de datos.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>C</h4>
-                    <p>Programación de sistemas y aplicaciones de bajo nivel.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>WordPress</h4>
-                    <p>CMS para sitios web profesionales y blogs dinámicos.</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>HTML5</h4>
+                        <p>Estructura semántica de páginas web modernas.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>CSS3</h4>
+                        <p>Diseño y estilizado avanzado con animaciones y layouts responsive.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>JavaScript</h4>
+                        <p>Programación dinámica y de alto rendimiento en el navegador.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>TypeScript</h4>
+                        <p>JavaScript con tipado estático para mayor seguridad y escalabilidad.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Angular</h4>
+                        <p>Framework robusto para aplicaciones web de gran escala.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Bootstrap</h4>
+                        <p>Framework CSS para desarrollo rápido y responsive.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Bases de Datos -->
-            <h3 class="skill-category">Bases de Datos</h3>
-            <p class="category-description">Gestión, diseño e implementación de bases de datos relacionales para almacenamiento eficiente y consultas optimizadas.</p>
-            <div class="skills">
-                <div class="skill-card">
-                    <h4>MySQL</h4>
-                    <p>Sistema de gestión de bases de datos relacional más popular.</p>
+            <div class="skill-section">
+                <div class="skill-section__header">
+                    <span class="skill-section__pill">Backend</span>
+                    <h3 class="skill-category">Tecnologías Backend</h3>
+                    <p class="category-description">Desarrollo del lado del servidor, APIs RESTful, y lógica de negocio para aplicaciones web robustas y escalables.</p>
                 </div>
-                <div class="skill-card">
-                    <h4>SQL Server</h4>
-                    <p>Plataforma de datos empresarial de Microsoft.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Oracle</h4>
-                    <p>Base de datos empresarial para aplicaciones críticas.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>DB2</h4>
-                    <p>Sistema de gestión de bases de datos de IBM.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>MariaDB</h4>
-                    <p>Fork de MySQL con mejoras de rendimiento y compatibilidad.</p>
-                </div>
-            </div>
-
-            <!-- Metodologías -->
-            <h3 class="skill-category">Metodologías</h3>
-            <p class="category-description">Aplicación de metodologías ágiles para gestión eficiente de proyectos, colaboración en equipo y entregas continuas.</p>
-            <div class="skills">
-                <div class="skill-card">
-                    <h4>Agile / Scrum</h4>
-                    <p>Desarrollo ágil con sprints, retrospectivas y entregas iterativas.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>Jira</h4>
-                    <p>Gestión de proyectos y seguimiento de tareas ágiles.</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>PHP</h4>
+                        <p>Desarrollo de aplicaciones web dinámicas y sistemas backend.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Node.js</h4>
+                        <p>Entorno JavaScript del lado del servidor para APIs rápidas.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Java</h4>
+                        <p>Aplicaciones empresariales robustas y escalables.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Python</h4>
+                        <p>Desarrollo web, automatización y análisis de datos.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>C</h4>
+                        <p>Programación de sistemas y aplicaciones de bajo nivel.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>WordPress</h4>
+                        <p>CMS para sitios web profesionales y blogs dinámicos.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- DevOps / Control de versiones -->
-            <h3 class="skill-category">DevOps / Control de Versiones</h3>
-            <p class="category-description">Herramientas para control de versiones, integración continua y despliegue de aplicaciones web.</p>
-            <div class="skills">
-                <div class="skill-card">
-                    <h4>Git</h4>
-                    <p>Control de versiones distribuido para colaboración en código.</p>
+            <div class="skill-section">
+                <div class="skill-section__header">
+                    <span class="skill-section__pill">Datos</span>
+                    <h3 class="skill-category">Bases de Datos</h3>
+                    <p class="category-description">Gestión, diseño e implementación de bases de datos relacionales para almacenamiento eficiente y consultas optimizadas.</p>
                 </div>
-                <div class="skill-card">
-                    <h4>Apache</h4>
-                    <p>Servidor web HTTP de código abierto más utilizado.</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>MySQL</h4>
+                        <p>Sistema de gestión de bases de datos relacional más popular.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>SQL Server</h4>
+                        <p>Plataforma de datos empresarial de Microsoft.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Oracle</h4>
+                        <p>Base de datos empresarial para aplicaciones críticas.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>DB2</h4>
+                        <p>Sistema de gestión de bases de datos de IBM.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>MariaDB</h4>
+                        <p>Fork de MySQL con mejoras de rendimiento y compatibilidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <div class="skill-section__header">
+                    <span class="skill-section__pill">Metodologías</span>
+                    <h3 class="skill-category">Metodologías</h3>
+                    <p class="category-description">Aplicación de metodologías ágiles para gestión eficiente de proyectos, colaboración en equipo y entregas continuas.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Agile / Scrum</h4>
+                        <p>Desarrollo ágil con sprints, retrospectivas y entregas iterativas.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Jira</h4>
+                        <p>Gestión de proyectos y seguimiento de tareas ágiles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <div class="skill-section__header">
+                    <span class="skill-section__pill">DevOps</span>
+                    <h3 class="skill-category">DevOps / Control de Versiones</h3>
+                    <p class="category-description">Herramientas para control de versiones, integración continua y despliegue de aplicaciones web.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Git</h4>
+                        <p>Control de versiones distribuido para colaboración en código.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Apache</h4>
+                        <p>Servidor web HTTP de código abierto más utilizado.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,9 +233,9 @@
 		<a href="./assets/pdf/cv_hugo_nuevo.pdf" download="cv_hugo_nuevo.pdf" class="btn">Curriculum</a>
 	</center><br>
 
-    <center id="curriculum" class="curriculum">
-		<a href="./assets/proyectos.html"  class="btn">Proyectos</a>
-	</center><br>
+    <center id="proyectos" class="curriculum">
+        <a href="./assets/proyectos.html"  class="btn">Proyectos</a>
+    </center><br>
 
     <footer>
         <p>&copy; 2026 Hugo Sánchez Gallardo - Todos los derechos reservados</p>

@@ -4,120 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Proyectos</title>
-    <style>
-        /* Reset general */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #495057;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header */
-        header {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 600;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-
-        /* Card Grid */
-        .project-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        /* Estilo de la tarjeta */
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid #343a40;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            color: #007bff;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .card-text {
-            color: #6c757d;
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="estilo/proyectos.css">
 </head>
 <body>
     <header>
         <h1>Mis Proyectos</h1>
         <p>Descubre los proyectos que he desarrollado</p>
+        <p style="margin-top:16px;"><a href="../index.html#intro" class="btn">Volver al inicio</a></p>
     </header>
 
     <div class="container">
@@ -181,7 +74,7 @@
             </div>
 
             <div class="card">
-                <img src="img/chat.jpg">
+                <img src="img/comedor.jpg">
                 <div class="card-body">
                     <h2 class="card-title">Comedor</h2>
                     <p class="card-text">Este proyecto trata sobre realizar gestiones sobre un comedor de la Escuela Virgen de Guadalupe en él se le facilitará las gestiones tanto a los padres para realizar las reservas de sus hijos, y para la secretaria de la Escuela a la hora de cambiar alguno sdatos o calcular importes de cada padre.</p>
@@ -190,7 +83,7 @@
             </div>
 
             <div class="card">
-                <img src="img/comedor.jpg">
+                <img src="img/chat.jpg">
                 <div class="card-body">
                     <h2 class="card-title">Chat OpenAI</h2>
                     <p class="card-text">Esta tarea trata sobre un mini Chat GPT que he creado, en el puedes hacerle preguntas a través de voz y por teclado, te responderá por mensaje y por voz, además puedes subirles PDf y hacerles preguntas sobre él, en este caso hay PDF de fútbol.</p>
